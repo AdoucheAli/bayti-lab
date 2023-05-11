@@ -1,11 +1,9 @@
 site_name: Bayti Lab
-
 site_url: https://blog.adoucheali.fr
 site_author: Ali Adouche
 site_description: >-
   Mes articles autour de java, angular et du devops
 
-# Repository
 repo_name: AdoucheAli/bayti-lab
 repo_url: https://github.com/AdoucheAli/bayti-lab
 

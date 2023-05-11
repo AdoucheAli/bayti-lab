@@ -1,2 +1,0 @@
-$ mkdir -p public
-$ echo 'blog.adoucheali.fr' > public/CNAME

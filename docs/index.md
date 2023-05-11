@@ -1,4 +1,6 @@
-# Welcome to MkDocs
+--8<-- "includes/acronymes.md"
+# Bienvenue sur Bayti lab
+
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 

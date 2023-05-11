@@ -1,7 +1,7 @@
  # to create a project docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material new .
 version: "3"
 services:
-  jekyll-serve:
+  mkdocs-serve:
     image: mkdocs-material-with-extra-plugin
     volumes:
       - '.:/docs'

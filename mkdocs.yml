@@ -11,6 +11,21 @@ edit_uri: edit/main/docs/
 
 copyright: Copyright &copy; 2023 Ali Adouche
 
+nav:
+  - Bayti: index.md
+  - Backend: 
+    - backend/index.md
+  - Frontend: 
+    - frontend/index.md
+  - Linux: 
+    - linux/index.md
+    - Multipass:
+        - linux/multipass/index.md
+  - Container: 
+    - container/index.md
+  - Kubernetes: 
+    - kubernetes/index.md  
+
 theme:
   name: material
   custom_dir: overrides

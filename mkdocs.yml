@@ -1,0 +1,205 @@
+site_name: Bayti Lab
+
+site_url: https://adoucheali.github.io/bayti-lab/
+site_author: Ali Adouche
+site_description: >-
+  Mes articles autour de java, angular et du devops
+
+# Repository
+repo_name: AdoucheAli/bayti-lab
+repo_url: https://gitlab.com/AdoucheAli/bayti-lab
+
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2023 Ali Adouche
+
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: fr
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      primary: teal
+      accent: red
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to dark mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to system preference
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  favicon: assets/favicon.png
+
+  icon:
+    logo: logo
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3
+    repo: fontawesome/brands/gitlab
+    #edit: material/pencil 
+    #view: material/eye
+
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+
+    - header.autohide
+
+    - navigation.path
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+
+    - search.highlight
+    - search.share
+    - search.suggest
+
+    - toc.follow
+    # - toc.integrate si on l'active, on n'aura pas le table of contents à droite
+
+markdown_extensions:
+- codehilite
+- extra
+- meta
+- abbr
+
+- def_list                      # Les listes de définition.
+- attr_list                     # Un peu de CSS et des attributs HTML.
+- footnotes                     # Notes[^1] de bas de page.  [^1]: ma note.
+- admonition                    # Blocs colorés  !!! info "ma remarque"
+
+- pymdownx.snippets
+- pymdownx.details              #   qui peuvent se plier/déplier.
+- pymdownx.caret                # Passage ^^souligné^^ ou en ^exposant^.
+- pymdownx.mark                 # Passage ==surligné==.
+- pymdownx.tilde                # Passage ~~barré~~ ou en ~indice~.
+- pymdownx.highlight            # Coloration syntaxique du code
+- pymdownx.inlinehilite         # pour  `#!python  <python en ligne>`
+- pymdownx.snippets             # Inclusion de fichiers externe.
+
+- pymdownx.tabbed               # Volets glissants.  === "Mon volet"
+- pymdownx.superfences          # Imbrication de blocs.
+- markdown.extensions.codehilite:
+    guess_lang: false
+- pymdownx.tasklist:            # Cases à cocher  - [ ]  et - [x]
+    custom_checkbox:    false   #   avec cases d'origine
+    clickable_checkbox: true    #   et cliquables.
+- pymdownx.keys:                # Touches du clavier.  ++ctrl+d++
+    separator: "\uff0b"
+- pymdownx.emoji:               # Émojis  :boom:
+    emoji_index:     !!python/name:materialx.emoji.twemoji
+    emoji_generator: !!python/name:materialx.emoji.to_svg
+- pymdownx.arithmatex:
+    generic: true
+- pymdownx.betterem:
+    smart_enable: all
+- pymdownx.caret
+- pymdownx.details
+- pymdownx.emoji:
+    emoji_generator: !!python/name:materialx.emoji.to_svg
+    emoji_index: !!python/name:materialx.emoji.twemoji
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.inlinehilite
+- pymdownx.keys
+- pymdownx.magiclink:
+    repo_url_shorthand: true
+    user: squidfunk
+    repo: mkdocs-material
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.superfences:
+    custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
+- pymdownx.tabbed:
+    alternate_style: true
+- pymdownx.tasklist:
+    custom_checkbox: true
+- pymdownx.tilde
+- toc:
+    permalink: ⚓︎
+    toc_depth: 3
+
+plugins:
+- search:
+    separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+- minify:
+    minify_html: true
+- awesome-pages:
+    collapse_single_pages: true
+- tags:
+    tags_extra_files:
+      tags/linux.md:
+        - linux
+        - multipass 
+      tags/web.md:
+        - HTML5
+        - JavaScript
+        - CSS
+        - angular
+- git-revision-date-localized:
+    enable_creation_date: true
+    fallback_to_build_date: true
+
+
+# Customization
+extra:
+  disqus: aliadoucheblog
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+  annotate:
+    json: [.s2]
+  #analytics:
+  #  provider: google
+  #  property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.com/AdoucheAli/
+    - icon: fontawesome/brands/github
+      link: https://github.com/AdoucheAli/      
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/aliadouche
+
+

@@ -55,11 +55,14 @@ theme:
 
   icon:
     logo: logo
+    
     tag:
       html: fontawesome/brands/html5
       js: fontawesome/brands/js
       css:  fontawesome/brands/css3
     repo: fontawesome/brands/gitlab
+      
+    repo: fontawesome/brands/github
     #edit: material/pencil 
     #view: material/eye
 
@@ -94,6 +97,12 @@ theme:
     # - toc.integrate si on l'active, on n'aura pas le table of contents à droite
 
 markdown_extensions:
+- markdown.extensions.codehilite:
+    guess_lang: false
+- toc:
+    permalink: ⚓︎
+    toc_depth: 3
+    
 - codehilite
 - extra
 - meta
@@ -117,6 +126,14 @@ markdown_extensions:
 - pymdownx.superfences          # Imbrication de blocs.
 - markdown.extensions.codehilite:
     guess_lang: false
+- pymdownx.caret
+- pymdownx.details
+- pymdownx.inlinehilite
+- pymdownx.keys
+- pymdownx.mark
+- pymdownx.smartsymbols
+- pymdownx.tilde
+
 - pymdownx.tasklist:            # Cases à cocher  - [ ]  et - [x]
     custom_checkbox:    false   #   avec cases d'origine
     clickable_checkbox: true    #   et cliquables.
@@ -201,5 +218,3 @@ extra:
       link: https://github.com/AdoucheAli/      
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/aliadouche
-
-

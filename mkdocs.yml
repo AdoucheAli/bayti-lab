@@ -11,9 +11,7 @@ repo_url: https://github.com/AdoucheAli/bayti-lab
 
 edit_uri: edit/main/docs/
 
-# Copyright
 copyright: Copyright &copy; 2023 Ali Adouche
-
 
 theme:
   name: material

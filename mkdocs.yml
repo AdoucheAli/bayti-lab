@@ -24,7 +24,8 @@ nav:
   - Container: 
     - container/index.md
   - Kubernetes: 
-    - kubernetes/index.md  
+    - kubernetes/index.md
+  - Tags: tags.md
 
 theme:
   name: material
@@ -70,9 +71,9 @@ theme:
     tag:
       html: fontawesome/brands/html5
       js: fontawesome/brands/js
-      css:  fontawesome/brands/css3
-    repo: fontawesome/brands/gitlab
-      
+      css: fontawesome/brands/css3
+      linux: fontawesome/brands/linux
+
     repo: fontawesome/brands/github
     #edit: material/pencil 
     #view: material/eye
@@ -196,15 +197,7 @@ plugins:
 - awesome-pages:
     collapse_single_pages: true
 - tags:
-    tags_extra_files:
-      tags/linux.md:
-        - linux
-        - multipass 
-      tags/web.md:
-        - HTML5
-        - JavaScript
-        - CSS
-        - angular
+    tags_file: tags.md
 - git-revision-date-localized:
     enable_creation_date: true
     fallback_to_build_date: true
@@ -217,6 +210,7 @@ extra:
     HTML5: html
     JavaScript: js
     CSS: css
+    Linux: linux
   annotate:
     json: [.s2]
   #analytics:

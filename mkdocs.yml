@@ -201,11 +201,12 @@ plugins:
 - git-revision-date-localized:
     enable_creation_date: true
     fallback_to_build_date: true
-
+# pour exposer les varaibles défini dans extra. Par defaut un certain nombre de variables sont accesible(config.*, page.*, navigation.*, environment.*, git.*), mais pas les extras. 
+#IL doit etre possitionné apres le plugin awesome-pages (The plugin "macros" might not work correctly when placed before awesome-pages in the list of plugins.)
+- macros
 
 # Customization
 extra:
-  disqus: aliadoucheblog
   tags:
     HTML5: html
     JavaScript: js

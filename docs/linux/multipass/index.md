@@ -21,13 +21,13 @@ comments: true
             :fontawesome-brands-linkedin:
         </span>
     </a>
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.canonical_url }}"
+    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url=={{ page.canonical_url }}"
         title="Patager l'article sur twitter">
         <span class="share-article twitter">
             :fontawesome-brands-twitter:
         </span>
     </a>
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.canonical_url }}"
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.canonical_url }}"
         title="Patager l'article sur facebook">
         <span class="share-article facebook">
             :fontawesome-brands-facebook:
